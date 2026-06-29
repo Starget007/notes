@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.header {
+	
+}
+
+.header-row {
+	display: flex;
+	flex-direction: row;
+	column-gap: 110px;
+	margin-top: 110px;
+	margin-left: 1300px;
+	height: 20px;
+}
+
+.container-header {
+	transition: box-shadow 0.1s ease-in;
+	transition: transform 0.3s ease-in-out;
+}
+
+.container-header:hover {
+/*	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);*/
+	transform: scale(1.1);
+}
+
+.h1 {
+	color: black;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.yandex {
+	margin-top: -3px;
+	width: 180px;
+}
+
+.vk {
+	margin-top: 14px;
+	width: 65px;
+}
+
+.h2 {
+	color: black;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+
+.rg {
+	margin-top: 10px;
+	width: 70px;
+}
+
+.h3 {
+	color: black;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.market {
+	margin-top: -7px;
+	width: 180px;
+}
+
+.h4 {
+	margin-top: -7px;
+	margin-left: 10px;
+}
+
+.muzyca {
+	margin-top: -20px;
+	width: 180px;
+}
+
+.h5 {
+	color: black;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.mosr {
+	margin-top: -10px;
+	width: 240px;
+	margin-left: -57px;
+}
+
+.h6 {
+	color: black;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.gosusl {
+	margin-top: 1px;
+	width: 250px;
+	margin-left: -130px;
+}
+
+.h7 {
+	color: black;
+	margin-top: 15px;
+	margin-left: -110px;
+}
+
+.youtu {
+	margin-top: -31px;
+	width: 400px;
+	margin-left: -180px;
+}
+
+.h8 {
+	color: black;
+	margin-top: 1px;
+	margin-left: -95px;
+}
+
+
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1;
+/*  left: 0;*/
+  top: 100px;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+  animation: fadeIn 0.3s;
+}
+
+/* Контент окна */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Отступ сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px; /* Ширина окна */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+  animation: slideIn 0.3s;
+}
+
+/* Крестик закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideIn {
+  from {transform: translateY(-20px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+.ozon {
+	margin-left: 20px;
+	width: 200px;
+}
+
+.h1-1 {
+	margin-left: 95px;
+	color: black;
+}
+
+.widberriss {
+	margin-top: 20px;
+	margin-left: 58px;
+	width: 120px;
+}
+
+.h1-2 {
+	color: black;
+	margin-top: 10px;
+	margin-left: 65px;
+}
+
+.yamarket {
+	margin-top: 40px;
+	margin-left: 80px;
+	width: 80px;
+}
+
+.h1-3 {
+	margin-top: 20px;
+	margin-left: 60px;
+	color: black;
+}
+
+.content-row {
+	display: flex;
+	flex-direction: column;
+	grid-row-gap: 100px;
+}
+
+.heatch {
+	padding: -40px;
+	margin-top: -140px;
+	margin-left: 270px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+	width: 800px;
+	border-radius: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.heatch:hover::before {
+	content: "";
+  position: absolute;
+  inset: -10px; /* выходит за границы поля, чтобы тень не обрезалась */
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  filter: blur(16px);
+  opacity: 0.35;
+  z-index: -1;
+  border-radius: 40px; /* повторяет форму поля */
+}
+
+.yan {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	width: 50px;
+}
+
+.ya-2 {
+	color: #A4A4A4;
+	margin-top: -30px;
+	margin-left: 340px;
+}
+
+.container-ali {
+	margin-left: 2300px;
+}
+
+.h9 {
+	color: #A4A4A4;
+	margin-left: 400px;
+	margin-top: 40px;
+}
+
+.alisa {
+	margin-top: -100px;
+	width: 800px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.alisa:hover {
+	transform: scale(0.9);
+}
